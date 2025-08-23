@@ -1,9 +1,9 @@
-import { reset, seed } from "drizzle-seed";
+import { reset, seed } from "drizzle-seed"
 
-import { db, sql } from "./connection.ts";
-import { schema } from "./schema/index.ts";
+import { db, sql } from "./connection.ts"
+import { schema } from "./schema/index.ts"
 
-await reset(db, schema);
+await reset(db, schema)
 
 await seed(db, schema).refine((f) => {
   return {
@@ -14,9 +14,10 @@ await seed(db, schema).refine((f) => {
         description: f.loremIpsum(),
       },
     },
-  };
-});
+  }
+})
 
-await sql.end();
+await sql.end()
 
-console.log("Database seeded");
+// biome-ignore lint/suspicious/noConsole: only used in dev
+console.log("Database seeded")
