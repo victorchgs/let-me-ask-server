@@ -8,6 +8,13 @@
       "when": 1755905741174,
       "tag": "0000_chemical_warpath",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1755996992443,
+      "tag": "0001_tidy_boomer",
+      "breakpoints": true
     }
   ]
 }
